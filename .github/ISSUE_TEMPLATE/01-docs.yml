@@ -1,0 +1,28 @@
+name: Documentation correction / 文档纠错
+description: Correct a guide with fictional examples / 用虚构示例改进文档
+title: "[Docs] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use fictional data only. Never attach credentials, real transcripts, recordings, or logs. Report vulnerabilities privately through Security. / 仅使用虚构数据，不附凭据、真实转写、录音或日志；漏洞通过 Security 私密报告。"
+  - type: input
+    id: page
+    attributes:
+      label: Page / 页面
+      description: Relative page path or public link / 相对路径或公开链接
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Problem and suggested correction / 问题与建议
+      description: Expected behavior and a fictional reproduction / 预期行为与虚构复现
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: Verification context / 验证条件
+      description: Actual app version/platform, or sample only / 实际 App 版本与平台，或仅仓库样本
+    validations:
+      required: true

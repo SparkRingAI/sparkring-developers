@@ -1,0 +1,28 @@
+name: Share a workflow / 分享工作流
+description: Propose a community recipe using fictional data / 用虚构数据分享社区教程
+title: "[Workflow] "
+body:
+  - type: markdown
+    attributes:
+      value: "Community-authored recipes must explain data destinations and use fictional examples. API/MCP/Webhooks are planned, not released. / 社区教程需说明数据去向并使用虚构示例；API/MCP/Webhook 尚未发布。"
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and prerequisites / 目标与前提
+      description: Tools, costs/accounts, and tested versions/platforms / 工具、费用或账号、实测版本与平台
+    validations:
+      required: true
+  - type: textarea
+    id: flow
+    attributes:
+      label: Steps and data destination / 步骤与数据去向
+      description: Every transfer and storage location; no private links or credentials / 每次传递与存储位置，不含私密链接或凭据
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Verification, limitations, and recovery / 验证、限制与恢复
+      description: Fictional input, expected output, failure handling, downstream deletion / 虚构输入、预期输出、失败处理、下游副本删除
+    validations:
+      required: true

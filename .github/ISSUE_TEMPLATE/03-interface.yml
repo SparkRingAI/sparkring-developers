@@ -1,0 +1,28 @@
+name: Interface proposal / 接口建议
+description: Discuss a future capability, not a released API / 讨论未来能力，不代表接口已发布
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: "API, MCP, and Webhook access is planned. Do not paste tokens, internal endpoints, personal data, or production responses. / API、MCP、Webhook 均为规划；不粘贴令牌、内部地址、个人数据或线上响应。"
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired result / 预期结果
+      description: Personal workflow and whether a manual path works today / 个人工作流，以及目前手动方式是否可行
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Minimum data and access / 最低数据与权限
+      description: Use fictional examples; explain why read-only text is or is not enough / 使用虚构示例，说明只读文字是否足够
+    validations:
+      required: true
+  - type: textarea
+    id: control
+    attributes:
+      label: User control and downstream copies / 用户控制与下游副本
+      description: Authorization, expiry/revocation, data destination, deletion / 授权、有效期与撤销、数据去向、删除
+    validations:
+      required: true

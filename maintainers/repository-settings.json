@@ -1,0 +1,11 @@
+{
+  "default_branch": "main",
+  "description": "Connect your SparkRing text to personal workflows with a read-only API, MCP, and community recipes.",
+  "has_issues": true,
+  "has_discussions": true,
+  "has_wiki": false,
+  "allow_squash_merge": true,
+  "allow_merge_commit": false,
+  "allow_rebase_merge": false,
+  "delete_branch_on_merge": false
+}
